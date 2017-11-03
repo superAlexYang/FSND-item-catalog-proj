@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, jsonify, url_for, f
 from flask import session as login_session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database_setup import Base, ToyShop, ToyItem, User
+from database_setup import Base, Category, CategoryItem, User
 
 
 engine = create_engine('postgresql://catalog:catalog123@localhost/catalog')
