@@ -1,0 +1,177 @@
+ul {
+	list-style-type: none;
+}
+
+.flash__message {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 800;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: black;
+}
+
+.wrapper .container {
+	max-width: 80rem;
+}
+
+.header {
+    background: grey;
+    border-bottom: .1rem solid grey;
+    display: block;
+    height: 6rem;
+    width: 100%;
+}
+
+.header .header__title {
+	color: grey;
+	display: inline;
+	line-height: 6rem;
+	position: relative;
+}
+
+.header__title .title__text {
+	display: inline;
+	font-size: 1.2rem;
+	font-weight: 800;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: black;
+}
+
+.header__user {
+	float: right;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.header__user .user__nav {
+	line-height: 6rem;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 800;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: black;
+}
+
+.content .container {
+	background: grey;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border-bottom: .1rem solid grey;
+}
+
+@media (min-width: 40rem) {
+	.content .container {
+		margin-top: 2rem;
+		border: .1rem solid grey;
+	}
+}
+
+@media (min-width: 40rem) {
+	.categories {
+		border-right: .1rem solid grey;
+		margin-right: 2rem;
+	}
+}
+
+.list__header .header__title {
+	font-weight: 800;
+	margin-bottom: 1rem;
+	display: block;
+	text-transform: capitalize;
+}
+
+.list__header .header__bar {
+	border-bottom: .5rem solid grey;
+	height: .1rem;
+	display: block;
+	width: 5rem;
+}
+
+.items__item .item__name {
+	text-transform: capitalize;
+}
+
+.items__item .item__type {
+	color: grey;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+.latest__list .list__add {
+	font-size: .8rem;
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 1.5rem;
+}
+
+.category-item__header .header__title {
+	font-weight: 800;
+	margin-bottom: 1rem;
+	display: block;
+	text-transform: capitalize;
+}
+
+.category-item__header .header__bar {
+	border-bottom: .5rem solid grey;
+	height: .1rem;
+	display: block;
+	width: 5rem;
+}
+
+.category-item__description {
+	margin-bottom: 1rem;
+}
+
+.category-item__controls .controls__edit,
+.category-item__controls .controls__delete,
+.category-item__controls .controls__back {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	margin-right: .2rem;
+}
+
+.category-item__form .form__label {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 800;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+.category-item__form .form__textarea {
+	min-height: 30rem;
+}
+
+/* Login Template */
+
+.wrapper .container--login {
+	max-width: 36rem;
+}
+
+.content .container--login {
+	padding: 8rem 5rem;
+	margin-top: 20rem;
+	border: .1rem solid grey;
+	text-align: center;
+}
+
+.login__separator {
+	font-weight: 800;
+	margin: 20px 0;
+}
+
+.login__button {
+
+}
+
+.login__button--google {
+	margin-top: 1rem;
+	background: #da4635;
+	border-color: #da4635;
+}
