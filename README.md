@@ -1,4 +1,3 @@
-# FSND-item-catalog-proj
 Udacity FSND Item Catalog project
 In this project, I build up a web application that showed several items and catalogries with descriptions.
 Authenticated users who sign up through google accound can add, edit and delete items they want.
