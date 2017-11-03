@@ -1,0 +1,18 @@
+{% extends "basic.html" %}
+
+{% block content %}
+
+	<div class="row">
+		<div class="category-item column">
+			<h6 class="category-item__header">
+				<span style="background-color:#ff4a03; color:#ffffff;" class="header__title">Delete Instrument</span>
+			</h6>
+			<form action="#" method="post">
+				<h5 class="category-item__message">Confirm to delete {{categoryItem.name}}?</h5>
+				<a href="{{url_for('showCategoryItem', catalog_id = categoryItem.category_id ,item_id = categoryItem.id )}}" class="button button-outline">Back</a>
+				<input style="background-color:#210375;" type="submit" value="Delete">
+			</form>
+		</div>
+	</div>
+
+{% endblock %}

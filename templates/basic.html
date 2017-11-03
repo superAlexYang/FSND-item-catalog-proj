@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FSND Item Catalog</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:360,360italic,760,760italic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+	<link rel="stylesheet" href="/static/milligram.min.css">
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header" style="background-color:#210375;">
+			<div class="container" style="background-color:#210375;">
+				<a href="/" class="header__title">
+					<h1 style="color:#ffffff;" class="title__text">Catalog App</h1>
+
+				</a>
+				<div class="header__user">
+					{%if 'username' not in session %}
+					<a style="color:#ffffff;" href="{{url_for('login')}}" class="user__nav">
+						Login
+					</a>
+					{% else %}
+					<a style="color:#ffffff;" href="{{url_for('logout')}}" class="user__nav">
+						Logout
+					</a>
+					{% endif %}
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
